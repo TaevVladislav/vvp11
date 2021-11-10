@@ -1,0 +1,19 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+	int a;
+	cin >> a;
+	int b;
+	cin >> b; 
+	if (a != b){
+		a = max(a, b);
+		b = max(a, b);
+	}
+	else {
+		a = 0;
+		b = 0;
+	}
+	cout << "a = " << a << endl << "b = " << b;
+}
