@@ -1,0 +1,16 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+	int a;
+	cin >> a;
+	int b;
+	cin >> b;
+	int c;
+	cin >> c;
+	int k[] = { a, b, c };
+	int* m = min_element(k, k + 3);
+	int s = a + b + c - *m;
+	cout << "s = " << s;
+}
